@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "skt-user22-s3-tf-state" {
+resource "aws_s3_bucket" "test-s3-tf-state" {
 
   bucket = "skt-user22-s3-bucket-tfstate"
 
@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "skt-user22-s3-tf-state" {
   
 }
 
-resource "aws_dynamodb_table" "skt-user22-ddb-tf-lock" {
+resource "aws_dynamodb_table" "test-ddb-tf-lock" {
 
   depends_on   = [aws_s3_bucket.skt-user22-s3-tf-state]
   name         = "skt-user22-s3-ddb-tflock"
