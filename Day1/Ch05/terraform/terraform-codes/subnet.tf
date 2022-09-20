@@ -14,13 +14,13 @@ resource "aws_subnet" "test-public-subnet1" {
   private_dns_hostname_type_on_launch            = "ip-name"
 
   tags = {
-    Name                                     = "test-public-subnet1"
+    Name                                     = "skt-user22-public-subnet1"
     "kubernetes.io/cluster/test-eks-cluster" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
   tags_all = {
-    Name                                     = "test-public-subnet1"
+    Name                                     = "skt-user22-public-subnet1"
     "kubernetes.io/cluster/test-eks-cluster" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
@@ -45,13 +45,13 @@ resource "aws_subnet" "test-public-subnet3" {
   private_dns_hostname_type_on_launch            = "ip-name"
 
   tags = {
-    Name                                     = "test-public-subnet3"
+    Name                                     = "skt-user22-public-subnet3"
     "kubernetes.io/cluster/test-eks-cluster" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
   tags_all = {
-    Name                                     = "test-public-subnet3"
+    Name                                     = "skt-user22-public-subnet3"
     "kubernetes.io/cluster/test-eks-cluster" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
