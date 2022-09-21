@@ -2,11 +2,11 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   ecr-repo: skt-user22
-  image-tag: green
+  image-tag: orange
 
 jobs:
   build:
